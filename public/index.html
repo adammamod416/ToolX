@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ToolX - أدوات أونلاين مجانية وسريعة للتحويل والضغط والتوليد والمعالجة">
+    <title>ToolX - تول اكس | أدوات أونلاين مجانية</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">🔧</div>
+                <h1>Tool<span class="highlight">X</span></h1>
+            </div>
+            <nav class="nav">
+                <a href="#home" class="nav-link active">الرئيسية</a>
+                <a href="#tools" class="nav-link">الأدوات</a>
+                <a href="#about" class="nav-link">عن الموقع</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">أدوات قوية <span class="gradient-text">مجانية</span> وسريعة</h2>
+                <p class="hero-subtitle">تحويل • ضغط • توليد • معالجة - كل ما تحتاجه في مكان واحد</p>
+                
+                <!-- Search Box -->
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="ابحث عن أداة..." class="search-input">
+                    <button class="search-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Grid -->
+    <section class="tools-section" id="tools">
+        <div class="container">
+            <h2 class="section-title">الأدوات المتاحة</h2>
+            
+            <div class="tools-grid" id="toolsGrid">
+                <!-- Image to PDF Tool -->
+                <div class="tool-card" data-tool="image-to-pdf">
+                    <div class="tool-icon">📄</div>
+                    <h3 class="tool-title">تحويل صورة لـ PDF</h3>
+                    <p class="tool-desc">حول صورك إلى ملف PDF بسهولة</p>
+                    <button class="tool-btn" onclick="openTool('image-to-pdf')">استخدم الأداة</button>
+                </div>
+
+                <!-- Speech to Text Tool -->
+                <div class="tool-card" data-tool="speech-to-text">
+                    <div class="tool-icon">🎤</div>
+                    <h3 class="tool-title">تفريغ الصوت</h3>
+                    <p class="tool-desc">حول الصوت إلى نص مكتوب</p>
+                    <button class="tool-btn" onclick="openTool('speech-to-text')">استخدم الأداة</button>
+                </div>
+
+                <!-- Image Compressor Tool -->
+                <div class="tool-card" data-tool="image-compressor">
+                    <div class="tool-icon">🗜️</div>
+                    <h3 class="tool-title">ضغط الصور</h3>
+                    <p class="tool-desc">قلل حجم الصور مع الحفاظ على الجودة</p>
+                    <button class="tool-btn" onclick="openTool('image-compressor')">استخدم الأداة</button>
+                </div>
+
+                <!-- Password Generator Tool -->
+                <div class="tool-card" data-tool="password-generator">
+                    <div class="tool-icon">🔐</div>
+                    <h3 class="tool-title">توليد كلمات سر</h3>
+                    <p class="tool-desc">أنشئ كلمات مرور قوية وآمنة</p>
+                    <button class="tool-btn" onclick="openTool('password-generator')">استخدم الأداة</button>
+                </div>
+
+                <!-- PDF to Images Tool -->
+                <div class="tool-card" data-tool="pdf-to-images">
+                    <div class="tool-icon">🖼️</div>
+                    <h3 class="tool-title">تحويل PDF لصور</h3>
+                    <p class="tool-desc">استخرج صفحات PDF كصور</p>
+                    <button class="tool-btn" onclick="openTool('pdf-to-images')">استخدم الأداة</button>
+                </div>
+
+                <!-- PDF Merger Tool -->
+                <div class="tool-card" data-tool="pdf-merger">
+                    <div class="tool-icon">📚</div>
+                    <h3 class="tool-title">دمج ملفات PDF</h3>
+                    <p class="tool-desc">ادمج عدة ملفات PDF في ملف واحد</p>
+                    <button class="tool-btn" onclick="openTool('pdf-merger')">استخدم الأداة</button>
+                </div>
+
+                <!-- Video to Audio Tool -->
+                <div class="tool-card" data-tool="video-to-audio">
+                    <div class="tool-icon">🎵</div>
+                    <h3 class="tool-title">استخراج الصوت من الفيديو</h3>
+                    <p class="tool-desc">حول الفيديو إلى ملف MP3</p>
+                    <button class="tool-btn" onclick="openTool('video-to-audio')">استخدم الأداة</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2 class="section-title">عن ToolX</h2>
+            <div class="about-content">
+                <p>ToolX هي منصة مجانية توفر مجموعة من الأدوات الأونلاين القوية والسريعة لمساعدتك في مهامك اليومية.</p>
+                <p>جميع الأدوات تعمل مباشرة في المتصفح دون الحاجة لتحميل أي برامج.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 ToolX - جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <!-- Tool Modal -->
+    <div class="modal" id="toolModal">
+        <div class="modal-overlay" onclick="closeModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <div id="toolContainer"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
