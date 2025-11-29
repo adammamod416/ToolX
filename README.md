@@ -7,9 +7,9 @@
 
 ## 🚀 Deploy to Vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/YOUR_USERNAME/toolx)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/adammamod416/ToolX)
 
-> **ملاحظة**: استبدل `YOUR_USERNAME` باسم المستخدم الخاص بك على GitHub
+> **الآن يمكنك النشر مباشرة على Vercel بضغطة واحدة!**
 
 ## 🚀 نظرة عامة
 
